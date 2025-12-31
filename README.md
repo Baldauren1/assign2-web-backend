@@ -7,7 +7,7 @@
 ---
 
 ## Project Structure
-![alt text](image.png)
+![alt text](screenshots/image.png)
 ---
 
 ## Setup Instructions
@@ -86,15 +86,15 @@ Screenshots of Postman tests are provided in the screenshots folder.
 
 ### Postman Screenshots
 Weather API – Success (200)
-![alt text](image-1.png)
+![alt text](screenshots/image-1.png)
 Weather API – Error (400)
-![alt text](image-2.png)
+![alt text](screenshots/image-2.png)
 News API – Success (200)
-![alt text](image-3.png)
+![alt text](screenshots/image-3.png)
 Currency API – Success (200)
-![alt text](image-4.png)
+![alt text](screenshots/image-4.png)
 Server Running
-![alt text](image-5.png)
+![alt text](screenshots/image-5.png)
 
 ###  Security Considerations
 - API keys are stored in environment variables using .env

@@ -25,14 +25,14 @@ router.get("/", async (req, res) => {
       }
     );
 
-    res.status(200).json(
-      response.data.articles.slice(0, 5).map((article) => ({
+    res.status(200).json({
+      articles: response.data.articles.slice(0, 5).map(article => ({
         title: article.title,
         description: article.description,
         url: article.url,
         source: article.source.name,
       }))
-    );
+  });
   } catch (error) {
     res.status(500).json({
       error: "News service unavailable",

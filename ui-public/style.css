@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: #eef2f3;
+  background-image: url(https://media.istockphoto.com/id/531889697/photo/weather-forecast-concept.jpg?s=612x612&w=0&k=20&c=FsYyo1HrL9WCpYt4RUzV39qIqEpz6ylTXxVxlh95lR8=);
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +9,7 @@ body {
 .container {
   max-width: 800px;
   margin: 30px auto;
-  background: #ffffff;
+  background: #add9ef;
   padding: 20px;
   border-radius: 10px;
 }

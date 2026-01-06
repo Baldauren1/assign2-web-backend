@@ -30,10 +30,19 @@ router.get("/", async (req, res) => {
       city: data.name,
       country: data.sys.country,
       temperature: data.main.temp,
+      feels_like: data.main.feels_like,
       description: data.weather[0].description,
-      coordinates: data.coord,
+      icon: data.weather[0].icon,
+      humidity: data.main.humidity,
+      pressure: data.main.pressure,
+      wind_speed: data.wind.speed,
+      coordinates: {
+        lat: data.coord.lat,
+        lon: data.coord.lon,
+      },
+      rain_last_3h: data.rain ? data.rain["3h"] : 0,
     });
-  } catch {
+  } catch (error) {
     res.status(404).json({ error: "City not found" });
   }
 });
